@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number System Converter</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Conversion Of Number Systems">
+    <meta name="keywords" content="HTML, CSS, Python, Number System Conversion, Converter">
+    <meta name="author" content="VIT">
+    <meta http-equiv="refresh" content="600">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2pvYjE0NDgtYmFja2dyb3VuZC0wNGEteF8xLmpwZw.jpg);
+            text-align: center;
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 40px;
+            margin: 5% auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #menu-container {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            transition: left 0.3s ease;
+            z-index: 1;
+        }
+
+        #menu-toggle {
+            font-size: 30px;
+            cursor: pointer;
+            padding: 10px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 60px 0 0 0;
+        }
+
+        #menu li {
+            padding: 15px;
+            border-bottom: 1px solid #555;
+            text-align: center;
+        }
+
+        #menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        #menu li a:hover {
+            background-color: #575757;
+        }
+
+        h1 {
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+            font-size: 45px;
+            display: inline-block;
+            background-color: rgba(255,255,255,0.5);
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        p {
+            font-size: 31px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        div {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+  <div id="menu-container">
+    <ul id="menu">
+      <li><a href="file:///E:/devens%20code/htmlcssjavascript/nsc/index.html">Home</a></li>
+      <li><a href="file:///E:/devens%20code/htmlcssjavascript/nsc/Info.html">Info</a></li>
+      <li><a href="file:///E:/devens%20code/htmlcssjavascript/nsc/Conv.html">Conversion</a></li>
+    </ul>
+  </div>
+
+  <div id="menu-toggle">&#9776;</div>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      var menuContainer = document.getElementById('menu-container');
+      var currentLeft = parseInt(window.getComputedStyle(menuContainer).left);
+
+      if (currentLeft < 0) {
+        menuContainer.style.left = '0';
+      } else {
+        menuContainer.style.left = '-250px';
+      }
+    });
+  </script>
+
+  <h1>NUMBER SYSTEM</h1>
+  <br>
+  <p><b>ABOUT US</b></p>
+  <div id="container">
+    Welcome to our platform, your go-to resource for things related to number system conversions in computer science! Our mission is to simplify the complex world of number systems and provide you with easy-to-use tools for converting numbers from one form to another. Whether you're a student, educator, or professional, our platform is designed to support your understanding and mastery of this fundamental aspect of computer science.
+  </div>
+
+</body>
+</html>
