@@ -18,7 +18,7 @@
             font-family: 'Arial', sans-serif;
             background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2pvYjE0NDgtYmFja2dyb3VuZC0wNGEteF8xLmpwZw.jpg);
             text-align: center;
-            
+        
             height: 100%; 
             background-position: center;
             background-repeat: no-repeat;
@@ -37,61 +37,21 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        #menu-container {
-            width: 250px;
-            background-color: #333;
-            color: #fff;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: -250px;
-            transition: left 0.3s ease;
-            z-index: 1;
-        }
+     
 
-        #menu-toggle {
-            font-size: 30px;
-            cursor: pointer;
-            padding: 10px;
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 2;
-            background-color: #333;
-            color: white;
-            border-radius: 5px;
-        }
-
-        #menu {
-            list-style-type: none;
-            padding: 0;
-            margin: 60px 0 0 0;
-        }
-
-        #menu li {
-            padding: 15px;
-            border-bottom: 1px solid #555;
-            text-align: center;
-        }
-
-        #menu li a {
-            color: white;
-            text-decoration: none;
-            display: block;
-        }
-
-        #menu li a:hover {
-            background-color: #575757;
-        }
+       
 
 
-
+       
         h1 {
             
-  background-color: rgba(255,255,255,0.5);
-
             
-        }
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            margin:10px;
+                      
+                  }
 
         input {
             padding: 10px;
@@ -114,63 +74,48 @@
             margin-top: 20px;
             font-size: 18px;
         }
+        .menu-container{
+            display: flex;
+            color: white;
+            background-color: black;
+        margin: 0%;
+            justify-content:space-around;
+            height: fit-content;
+        }
+       
+        li,a{
+            place-content: center;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+            font-size: 25px;
+         
+        }
 
 
     </style>
 
 
-<style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
 
-        h1 {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            animation: fadeIn 2s ease-in-out;
-        }
-    </style>
 </head>
 <body>
 
 
-  <div id="menu-container">
-    <ul id="menu">
-      <li><a href="index.html" style="color: white;">Home</a></li>
-      <li><a href="Info.html" style="color: white;">Info</a></li>
-      <li><a href="Conv.html" style="color: white;">Conversion</a></li>
-
-      
-      
-     
-    </ul>
+   <div id="menu-container">
+   <h1><a href="index.html"> <h1>NUMBER SYSTEM</h1></a></h1>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Info.html">Info</a></li>
+      <li><a href="Conv.html">Conversion</a></li>
   </div>
 
-  <div id="menu-toggle">&#9776;</div>
 
-  <script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-      var menuContainer = document.getElementById('menu-container');
-      var currentLeft = parseInt(window.getComputedStyle(menuContainer).left);
-
-      if (currentLeft < 0) {
-        menuContainer.style.left = '0';
-      } else {
-        menuContainer.style.left = '-200px';
-      }
-    });
-  </script>
+  
 
 
 
 
 
-<h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: 10;font-size: 45px;display:inline-block">NUMBER SYSTEM CONVERSION</h1><br>
+<br>
     <h1 style="display:inline-block"> BINARY Number System Converter</h1><br>
     <input type="text" id="binaryInput1" placeholder="Enter binary number" /><br>
     <br>
@@ -347,6 +292,11 @@ if (!/^[0-9A-Fa-f]+$/.test(hexadecimalInput2)) {
 
 
 </html>
+
+
+
+
+
 
 
 
