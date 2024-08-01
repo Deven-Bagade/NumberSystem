@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-        body, html {
+     body, html {
             height: 100%;
             margin: 0;
         }
@@ -23,10 +23,11 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+            
         }
 
         #container {
-           background-color: rgba(255, 255, 255, 0.363);
+            background-color: rgba(255, 255, 255, 0.363);
             border-radius: 8px;
             padding: 40px;
             margin: 5% auto;
@@ -34,32 +35,16 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-   #menu-container{
-            display: flex;
-            color: white;
-            background-color: black;
-        margin: 0%;
-            justify-content:space-around;
-            height: fit-content;
-        }
-       
-        li,a{
-            place-content: center;
-            color: white;
-            list-style: none;
-            text-decoration: none;
-            font-size: 25px;
-         
-        }
+    
 
-       
+        
+
         h1 {
             font-family: 'Verdana', Geneva, Tahoma, sans-serif;
             font-weight: 700;
             font-size: 35px;
-            display: inline-block;
-           color:white;
-        
+            margin:10px;
+            
             
         }
 
@@ -82,6 +67,34 @@
         div {
             margin-top: 20px;
             font-size: 18px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+       
+        #menu-container{
+            display: flex;
+            color: white;
+            background-color: black;
+        margin: 0%;
+            justify-content:space-around;
+            height: fit-content;
+        }
+       
+        li,a{
+            place-content: center;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+            font-size: 25px;
+         
         }
 
       
